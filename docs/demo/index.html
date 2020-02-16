@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Effects.css</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, minimal-ui" />
+
+  <link href="fonts.css" rel='stylesheet' type='text/css'>
+  <script src="https://sylvain59650.github.io/demonstrator/api/htmlElement.min.js"></script>
+  <script src="https://sylvain59650.github.io/demonstrator/api/htmlElement-events.min.js"></script>
+
+  <link rel="stylesheet" href="modules/animate/dist/animate-core.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site__header island">
+    <div class="wrap">
+      <span id="animationSandbox" style="display: block;"><h1 class="site__title mega">Effects.css</h1></span>
+    </div>
+  </header>
+
+  <main class="site__content island" role="content">
+    <div class="wrap">
+      <form>
+        <select class="input input--dropdown anim">
+        <optgroup label="Attention Seekers">
+          <option value="bounce">bounce</option>
+          <option value="flash">flash</option>
+          <option value="pulse">pulse</option>
+          <option value="rubberBand">rubberBand</option>
+          <option value="shake">shake</option>
+          <option value="swing">swing</option>
+          <option value="tada">tada</option>
+          <option value="wobble">wobble</option>
+          <option value="jello">jello</option>
+        </optgroup>
+
+        <optgroup label="Back Entrances">
+          <option value="backInDown">backInDown</option>
+          <option value="backInLeft">backInLeft</option>
+          <option value="backInRight">backInRight</option>
+          <option value="backInUp">backInUp</option>
+        </optgroup>
+
+        <optgroup label="Back Exits">
+          <option value="backOutDown">backOutDown</option>
+          <option value="backOutLeft">backOutLeft</option>
+          <option value="backOutRight">backOutRight</option>
+          <option value="backOutUp">backOutUp</option>
+        </optgroup>
+
+        <optgroup label="Bouncing Entrances">
+          <option value="bounceIn">bounceIn</option>
+          <option value="bounceInDown">bounceInDown</option>
+          <option value="bounceInLeft">bounceInLeft</option>
+          <option value="bounceInRight">bounceInRight</option>
+          <option value="bounceInUp">bounceInUp</option>
+        </optgroup>
+
+        <optgroup label="Bouncing Exits">
+          <option value="bounceOut">bounceOut</option>
+          <option value="bounceOutDown">bounceOutDown</option>
+          <option value="bounceOutLeft">bounceOutLeft</option>
+          <option value="bounceOutRight">bounceOutRight</option>
+          <option value="bounceOutUp">bounceOutUp</option>
+        </optgroup>
+
+        <optgroup label="Fading Entrances">
+          <option value="fadeIn">fadeIn</option>
+          <option value="fadeInBottomLeft">fadeInBottomLeft</option>
+          <option value="fadeInBottomRight">fadeInBottomRight</option>
+          <option value="fadeInDown">fadeInDown</option>
+          <option value="fadeInDownBig">fadeInDownBig</option>
+          <option value="fadeInLeft">fadeInLeft</option>
+          <option value="fadeInLeftBig">fadeInLeftBig</option>
+          <option value="fadeInRight">fadeInRight</option>
+          <option value="fadeInRightBig">fadeInRightBig</option>
+          <option value="fadeInTopLeft">fadeInTopLeft</option>
+          <option value="fadeInTopRight">fadeInTopRight</option>
+          <option value="fadeInUp">fadeInUp</option>
+          <option value="fadeInUpBig">fadeInUpBig</option>
+        </optgroup>
+
+        <optgroup label="Fading Exits">
+          <option value="fadeOut">fadeOut</option>
+          <option value="fadeOutBottomLeft">fadeOutBottomLeft</option>
+          <option value="fadeOutBottomRight">fadeOutBottomRight</option>
+          <option value="fadeOutDown">fadeOutDown</option>         
+          <option value="fadeOutDownBig">fadeOutDownBig</option>
+          <option value="fadeOutLeft">fadeOutLeft</option>
+          <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+          <option value="fadeOutRight">fadeOutRight</option>
+          <option value="fadeOutRightBig">fadeOutRightBig</option>
+          <option value="fadeOutTopLeft">fadeOutTopLeft</option>
+          <option value="fadeOutTopRight">fadeOutTopRight</option>
+          <option value="fadeOutUp">fadeOutUp</option>
+          <option value="fadeOutUpBig">fadeOutUpBig</option>
+        </optgroup>
+
+        <optgroup label="Flippers">
+          <option value="flip">flip</option>
+          <option value="flipInX">flipInX</option>
+          <option value="flipInY">flipInY</option>
+          <option value="flipOutX">flipOutX</option>
+          <option value="flipOutY">flipOutY</option>
+        </optgroup>
+
+        <optgroup label="Lightspeed">
+          <option value="lightSpeedIn">lightSpeedIn</option>
+          <option value="lightSpeedOut">lightSpeedOut</option>
+        </optgroup>
+
+        <optgroup label="Rotating Entrances">
+          <option value="rotateIn">rotateIn</option>
+          <option value="rotateInDownLeft">rotateInDownLeft</option>
+          <option value="rotateInDownRight">rotateInDownRight</option>
+          <option value="rotateInUpLeft">rotateInUpLeft</option>
+          <option value="rotateInUpRight">rotateInUpRight</option>
+        </optgroup>
+
+        <optgroup label="Rotating Exits">
+          <option value="rotateOut">rotateOut</option>
+          <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+          <option value="rotateOutDownRight">rotateOutDownRight</option>
+          <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+          <option value="rotateOutUpRight">rotateOutUpRight</option>
+        </optgroup>
+
+        <optgroup label="Sliding Entrances">
+          <option value="slideInUp">slideInUp</option>
+          <option value="slideInDown">slideInDown</option>
+          <option value="slideInLeft">slideInLeft</option>
+          <option value="slideInRight">slideInRight</option>
+
+        </optgroup>
+        <optgroup label="Sliding Exits">
+          <option value="slideOutUp">slideOutUp</option>
+          <option value="slideOutDown">slideOutDown</option>
+          <option value="slideOutLeft">slideOutLeft</option>
+          <option value="slideOutRight">slideOutRight</option>
+          
+        </optgroup>
+        
+        <optgroup label="Zoom Entrances">
+          <option value="zoomIn">zoomIn</option>
+          <option value="zoomInDown">zoomInDown</option>
+          <option value="zoomInLeft">zoomInLeft</option>
+          <option value="zoomInRight">zoomInRight</option>
+          <option value="zoomInUp">zoomInUp</option>
+        </optgroup>
+        
+        <optgroup label="Zoom Exits">
+          <option value="zoomOut">zoomOut</option>
+          <option value="zoomOutDown">zoomOutDown</option>
+          <option value="zoomOutLeft">zoomOutLeft</option>
+          <option value="zoomOutRight">zoomOutRight</option>
+          <option value="zoomOutUp">zoomOutUp</option>
+        </optgroup>
+
+        <optgroup label="Specials">
+          <option value="hinge">hinge</option>
+          <option value="jackInTheBox">jackInTheBox</option>
+          <option value="rollIn">rollIn</option>
+          <option value="rollOut">rollOut</option>
+        </optgroup>
+
+        <optgroup label="Magic Effects">
+          <option value="magic">magic</option>
+          <option value="twisterInDown">twisterInDown</option>
+          <option value="twisterInUp">twisterInUp</option>
+          <option value="swap">swap</option>
+<option value="swashIn">swashIn</option>
+        </optgroup>
+
+        <optgroup label="Bing">
+          <option value="puffIn">puffIn</option>
+<option value="puffOut">puffOut</option>
+<option value="vanishIn">vanishIn</option>
+<option value="vanishOut">vanishOut</option>
+        </optgroup>
+        <optgroup label="Static Effects">
+          <option value="openDownLeft">openDownLeft</option>
+<option value="openDownLeftOut">openDownLeftOut</option>
+<option value="openDownLeftReturn">openDownLeftReturn</option>
+<option value="openDownRight">openDownRight</option>
+<option value="openDownRightOut">openDownRightOut</option>
+<option value="openDownRightReturn">openDownRightReturn</option>
+<option value="openUpLeft">openUpLeft</option>
+<option value="openUpLeftOut">openUpLeftOut</option>
+<option value="openUpLeftReturn">openUpLeftReturn</option>
+<option value="openUpRight">openUpRight</option>
+<option value="openUpRightOut">openUpRightOut</option>
+<option value="openUpRightReturn">openUpRightReturn</option>
+        </optgroup>
+        <optgroup label="Perspective">
+          <option value="perspectiveDown">perspectiveDown</option>
+<option value="perspectiveDownReturn">perspectiveDownReturn</option>
+<option value="perspectiveLeft">perspectiveLeft</option>
+<option value="perspectiveLeftReturn">perspectiveLeftReturn</option>
+<option value="perspectiveRight">perspectiveRight</option>
+<option value="perspectiveRightReturn">perspectiveRightReturn</option>
+<option value="perspectiveUp">perspectiveUp</option>
+<option value="perspectiveUpReturn">perspectiveUpReturn</option>
+        </optgroup>
+        <optgroup label="Rotate">
+          <option value="rotateDown">rotateDown</option>
+<option value="rotateLeft">rotateLeft</option>
+<option value="rotateRight">rotateRight</option>
+<option value="rotateUp">rotateUp</option>
+        </optgroup>
+        <optgroup label="Slide">
+          <option value="slideDown">slideDown</option>
+          <option value="slideDownReturn">slideDownReturn</option>
+          <option value="slideLeft">slideLeft</option>
+          <option value="slideLeftReturn">slideLeftReturn</option>
+          <option value="slideRight">slideRight</option>
+          <option value="slideRightReturn">slideRightReturn</option>
+          <option value="slideUp">slideUp</option>
+          <option value="slideUpReturn">slideUpReturn</option>  
+        </optgroup>
+        <optgroup label="Math">
+          <option value="foolishIn">foolishIn</option>
+          <option value="foolishOut">foolishOut</option>
+          <option value="holeOut">holeOut</option>
+          <option value="swashIn">swashIn</option>
+        </optgroup>
+        <optgroup label="Tin">
+          <option value="tinDownIn">tinDownIn</option>
+<option value="tinDownOut">tinDownOut</option>
+<option value="tinLeftIn">tinLeftIn</option>
+<option value="tinLeftOut">tinLeftOut</option>
+<option value="tinRightIn">tinRightIn</option>
+<option value="tinRightOut">tinRightOut</option>
+<option value="tinUpIn">tinUpIn</option>
+<option value="tinUpOut">tinUpOut</option>
+        </optgroup>
+        <optgroup label="Bomb">
+          <option value="bombLeftOut">bombLeftOut</option>
+<option value="bombRightOut">bombRightOut</option>
+        </optgroup>
+        <optgroup label="Boing">
+          <option value="boingInUp">boingInUp</option>
+          <option value="boingOutDown">boingOutDown</option>          
+        </optgroup>
+
+        <optgroup label="On The Space">
+          <option value="spaceInDown">spaceInDown</option>
+<option value="spaceInLeft">spaceInLeft</option>
+<option value="spaceInRight">spaceInRight</option>
+<option value="spaceInUp">spaceInUp</option>
+<option value="spaceOutDown">spaceOutDown</option>
+<option value="spaceOutLeft">spaceOutLeft</option>
+<option value="spaceOutRight">spaceOutRight</option>
+<option value="spaceOutUp">spaceOutUp</option>
+        </optgroup>
+
+
+
+
+
+
+
+
+
+
+
+
+        </optgroup>
+      </select>
+
+        <button class="butt" id="previous">Previous</button>
+        <button class="butt" id="animate">Animate it</button>
+        <button class="butt" id="next">Next</button>
+      </form>
+      <hr />
+    </div>
+  </main>
+  <!-- /.site__content -->
+
+
+  <script>
+    function showAnimation(anim) {
+      var style = "modules/animate/dist/" + anim + ".min.css";
+      document.getStyles([style]);
+      qsi("animationSandbox")
+        .setClass("")
+        .addClass(anim + ' animated')
+        .on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+          this.setClass("");
+        }, {
+          once: true
+        });
+    };
+
+    document.ready(function() {
+      let animCb=qs(".anim");
+
+      qsi("previous").on("click",function(e){
+        e.preventDefault();
+        if (animCb.selectedIndex>0) {
+        animCb.selectedIndex=animCb.selectedIndex-1;
+        }
+        else {
+          animCb.selectedIndex=animCb.options.length-1;
+        }
+        animCb.options[animCb.selectedIndex].selected=true;
+        showAnimation(animCb.val());
+      });
+
+      qsi("next").on("click",function(e){
+        e.preventDefault();
+        if (animCb.selectedIndex<animCb.options.length-1) {
+          animCb.selectedIndex=animCb.selectedIndex+1;
+        }
+        else {
+          animCb.selectedIndex=0;
+        }
+        animCb.options[animCb.selectedIndex].selected=true;
+        showAnimation(animCb.val());
+      });
+
+      qsi('animate').on("click", function(e) {
+        e.preventDefault();
+        showAnimation(animCb.val());
+      });
+
+      animCb.on("change", function() {
+        showAnimation(animCb.val());
+      });
+
+      animCb.trigger("change");
+    });
+  </script>
+
+</body>
+
+</html>

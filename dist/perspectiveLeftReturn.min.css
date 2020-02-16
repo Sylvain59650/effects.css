@@ -1,0 +1,1 @@
+.perspectiveLeftReturn{animation-name:perspectiveLeftReturn}@keyframes perspectiveLeftReturn{0%{transform-origin:0 0;transform:perspective(800px) rotateY(-180deg)}to{transform-origin:0 0;transform:perspective(800px) rotateY(0deg)}}

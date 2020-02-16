@@ -1,0 +1,1 @@
+.openUpRight{animation-name:openUpRight}@keyframes openUpRight{0%{transform-origin:top right;transform:rotate(0deg);animation-timing-function:ease-out}to{transform-origin:top right;transform:rotate(-110deg);animation-timing-function:ease-in-out}}

@@ -1,0 +1,1 @@
+.slideUp{animation-name:slideUp}@keyframes slideUp{0%{transform-origin:0 0;transform:translateY(0)}to{transform-origin:0 0;transform:translateY(-100%)}}

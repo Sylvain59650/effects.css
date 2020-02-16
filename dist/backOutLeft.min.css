@@ -1,0 +1,1 @@
+@keyframes backOutLeft{0%{transform:scale(1);opacity:1}20%{transform:translateX(0) scale(.7);opacity:.7}to{transform:translateX(-2000px) scale(.7);opacity:.7}}.backOutLeft{animation-name:backOutLeft}

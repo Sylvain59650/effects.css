@@ -1,0 +1,1 @@
+.slideUpReturn{animation-name:slideUpReturn}@keyframes slideUpReturn{0%{transform-origin:0 0;transform:translateY(-100%)}to{transform-origin:0 0;transform:translateY(0)}}

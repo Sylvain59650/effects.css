@@ -1,8 +1,25 @@
 # Effects.css 
 
+<div style="display:inline">
+    <a target="_blank" title="build" href="https://travis-ci.org/Sylvain59650/effects.css"><img src="https://travis-ci.org/Sylvain59650/effects.css.png?branch=master" /></a>
+    <a target="_blank" title="version" href="https://www.npmjs.com/package/effects.css"><img src="https://img.shields.io/npm/v/effects.css.svg" /></a>
+    <a target="_blank" title="package" href="https://github.com/Sylvain59650/effects.css"><img src="https://img.shields.io/github/package-json/v/Sylvain59650/effects.css.svg" /></a>
+    <a target="_blank" title="dependencies" href="https://david-dm.org/Sylvain59650/effects.css"><img src="https://img.shields.io/david/Sylvain59650/effects.css.svg" /></a>
+    <a target="_blank" title="dependencies graph" href="http://npm.anvaka.com/#/view/2d/effects.css"><img src="https://img.shields.io/badge/dependencies-graph-blue.svg" /></a>
+    <img src="https://img.shields.io/bundlephobia/min/effects.css.svg" />
+    <img src="https://img.shields.io/badge/eslint-ok-blue.svg" />
+    <a target="_blank" title="tests" href="https://sylvain59650.github.io/effects.css/"><img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" /></a>
+    <a target="_blank" title="downloads" href="https://www.jsdelivr.com/package/npm/effects.css"><img src="https://data.jsdelivr.com/v1/package/npm/effects.css/badge" /></a>
+    <a target="_blank" title="cdn" href="https://cdn.jsdelivr.net/npm/effects/distrib/effects.min.js"><img src="https://img.shields.io/badge/cdn-jsdeliv-black.svg" /></a>
+    <img src="https://img.shields.io/npm/l/effects.css.svg" />
+    <img src="https://hits.dwyl.com/Sylvain59650/effects.css.svg" />
+  </div>
 
 `Effects.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
+# Demonstration
+
+See [Demo](https://sylvain59650.github.io/effects.css/)
 
 ## Installation
 
@@ -176,12 +193,21 @@ It's possible to control the speed of the animation by adding these classes, as 
 
 ## Custom Builds
 
+All effects are in dist/animate.min.css file, you can easily use with 
+```javascript
+ <link href="effects.css/dist/animate.min.css" rel="stylesheet" type="text/css" />
+```
+
+but if you want only few effects, you can use the file which is called as the effect name.
+
+Example 
+```javascript
+<link href="effects.css/dist/animate-core.min.css" rel="stylesheet" type="text/css" />
+ <link href="effects.css/dist/bounceIn.min.css" rel="stylesheet" type="text/css" />
+```
+
 Effects.css is powered by [gulp.js](http://gulpjs.com/), which means you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
 
-```sh
-$ cd path/to/Effects.css/
-$ sudo npm install
-```
 
 Next, run `gulp` to compile your custom builds. For example, if you want only some of the “attention seekers”, simply edit the `animate-config.json` file to select only the animations you want to use.
 
@@ -206,13 +232,18 @@ Effects.css supports the [`prefers-reduced-motion` media query](https://webkit.o
 
 ## Effects
 Effects.css is based on <a href="https://github.com/daneden/animate.css">Animate.css v3.7.2</a> by Daniel Eden and 96 contributors
-and on <a href="https://github.com/miniMAC/magic"> magic v1.4.5</a>by miniMAC and 9 contributors
+and on <a href="https://github.com/miniMAC/magic"> magic v1.4.5</a> by miniMAC and 9 contributors
 ## License
 
 Effects.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
 
 ## Contributing
 
-Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](http://codepen.io). That **last one is important**.
+Pull requests are the way to go here. 
+We only have two rules for submitting a pull request: 
+<ul>
+<li>match the naming convention (camelCase, categorised [fades, bounces, etc])</li>
+<li>let us see a demo of submitted animations in a [pen](http://codepen.io). That **last one is important**.</li>
+</ul>
 
 

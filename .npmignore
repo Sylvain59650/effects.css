@@ -4,3 +4,7 @@ tests/
 src/
 .vscode
 gulpfile.js
+.prettierignore
+.eslint*
+.editor*
+.git*

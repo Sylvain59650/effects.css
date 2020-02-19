@@ -19,7 +19,7 @@
 
 # Demonstration
 
-See [Demo](https://sylvain59650.github.io/effects.css/)
+[Check out all the animations here!](https://Sylvain59650.github.io/effects.css/)
 
 ## Installation
 
@@ -42,22 +42,22 @@ To use Effects.css in your website, simply drop the stylesheet into your documen
 
 ```html
 <head>
-  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="effects.css/dist/effects.min.css" />
 </head>
 ```
 
-or use a CDN hosted version by [CDNJS](https://cdnjs.com/libraries/Effects.css)
+or use a CDN hosted version by [JSDeliv](https://www.jsdelivr.com/package/npm/effects.css)
 
 ```html
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Effects.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/effects.css" />
 </head>
 ```
 
 
 ### Animations
 
-To animate an element, add the class `animated` to an element. You can include the class `infinite` for an infinite loop. Finally you need to add one of the following classes to the element:
+To animate an element, add the class `animated` to an element and one of the following classes to the element :
 
 | Class Name           |                        |                     |                         |
 | -------------------- | ---------------------- | ------------------- | ----------------------- |
@@ -82,7 +82,7 @@ To animate an element, add the class `animated` to an element. You can include t
 | `slideOutDown`       | `slideOutLeft`         | `slideOutRight`     | `slideOutUp`            |
 | `heartBeat`          | `boingInUp`            | `boingOutDown`      | `bombLeftOut`           |
 | `bombRightOut`       | `foolishIn`            | `foolishOut`        | `holeOut`               |
-| `magic`              | `magicCopie`           | `openDownLeft`      | `openDownLeftOut`       |
+| `magic`              | `washOut`              | `openDownLeft`      | `openDownLeftOut`       |
 | `openDownLeftReturn` | `openDownRight`        | `openDownRightOut`  | `openDownRightReturn`   |
 | `openUpLeft`         | `openUpLeftOut`        | `openUpLeftReturn`  | `openUpRight`           |
 | `openUpRightOut`     | `openUpRightReturn`    | `perspectiveDown`   | `perspectiveDownReturn` |
@@ -96,15 +96,33 @@ To animate an element, add the class `animated` to an element. You can include t
 | `swap`               | `swashIn`              | `tinDownIn`         | `tinDownOut`            |
 | `tinLeftIn`          | `tinLeftOut`           | `tinRightIn`        | `tinRightOut`           |
 | `tinUpIn`            | `tinUpOut`             | `twisterInDown`     | `twisterInUp`           |
-| `vanishIn`           | `vanishOut`            | `washOut`           |
+| `vanishIn`           | `vanishOut`            |
 
-Full example:
+```html
+<h1 class="animated bounce">Example</h1>
+```
+
+
+You can include the class `infinite` for an infinite loop.
+
+```html
+<h1 class="animated infinite bounce">Example</h1>
+```
+
+It's possible to add delays directly on the element's class attribute by including one of the following classes.
+
+| Class Name | Delay Time |
+| ---------- | ---------- |
+| `delay-2s` | `2s`       |
+| `delay-3s` | `3s`       |
+| `delay-4s` | `4s`       |
+| `delay-5s` | `5s`       |
+
 
 ```html
 <h1 class="animated infinite bounce delay-2s">Example</h1>
 ```
 
-[Check out all the animations here!](https://Sylvain59650.github.io/effects.css/)
 
 It's possible to change the duration of your animations, add a delay or change the number of times that it plays:
 
@@ -116,71 +134,9 @@ It's possible to change the duration of your animations, add a delay or change t
 }
 ```
 
-## Usage with jQuery
-
-You can do a whole bunch of other stuff with Effects.css when you combine it with jQuery. A simple example:
-
-```javascript
-$('#yourElement').addClass('animated bounceOutLeft');
-```
-
-You can also detect when an animation ends:
-
-<!--
-Before you make changes to this file, you should know that $('#yourElement').one() is *NOT A TYPO*
-
-http://api.jquery.com/one/
--->
-
-```javascript
-// See https://github.com/daneden/Effects.css/issues/644
-var animationEnd = (function(el) {
-  var animations = {
-    animation: 'animationend',
-    OAnimation: 'oAnimationEnd',
-    MozAnimation: 'mozAnimationEnd',
-    WebkitAnimation: 'webkitAnimationEnd',
-  };
-
-  for (var t in animations) {
-    if (el.style[t] !== undefined) {
-      return animations[t];
-    }
-  }
-})(document.createElement('div'));
-
-$('#yourElement').one(animationEnd, doSomething);
-```
-
-
-
-
-## Setting _Delay_ and _Speed_
-
-### Delay Class
-
-It's possible to add delays directly on the element's class attribute, just like this:
-
-```html
-<div class="animated bounce delay-2s">Example</div>
-```
-
-| Class Name | Delay Time |
-| ---------- | ---------- |
-| `delay-2s` | `2s`       |
-| `delay-3s` | `3s`       |
-| `delay-4s` | `4s`       |
-| `delay-5s` | `5s`       |
-
 > _**Note**: The default delays are from 1 second to 5 seconds only. If you need custom delays, add it directly to your own CSS code._
 
-### Slow, Slower, Fast, and Faster Class
-
 It's possible to control the speed of the animation by adding these classes, as a sample below:
-
-```html
-<div class="animated bounce faster">Example</div>
-```
 
 | Class Name | Speed Time |
 | ---------- | ---------- |
@@ -191,18 +147,47 @@ It's possible to control the speed of the animation by adding these classes, as 
 
 > _**Note**: The `animated` class has a default speed of `1s`. If you need custom duration, add it directly to your own CSS code._
 
+```html
+<div class="animated bounce faster">Example</div>
+```
 
-## Accessibility
 
-Effects.css supports the [`prefers-reduced-motion` media query](https://webkit.org/blog/7551/responsive-design-for-motion/) so that users with motion sensitivity can opt out of animations. On supported platforms (currently only OSX Safari and iOS Safari), users can select "reduce motion" on their operating system preferences and it will turn off CSS transitions for them without any further work required.
+## Usage
 
+All effects are in dist/effects.min.css file, you can easily use with 
+```html
+ <link href="effects.css/dist/effects.min.css" rel="stylesheet" type="text/css" />
+```
 
-## Effects
-Effects.css is based on <a href="https://github.com/daneden/animate.css">Animate.css v3.7.2</a> by Daniel Eden and 96 contributors
-and on <a href="https://github.com/miniMAC/magic"> magic v1.4.5</a> by miniMAC and 9 contributors
+but if you want only few effects, you can use the file which is called as the effect name.
+
+Example 
+```html
+<link href="effects.css/dist/effects-core.min.css" rel="stylesheet" type="text/css" />
+ <link href="effects.css/dist/bounceIn.min.css" rel="stylesheet" type="text/css" />
+```
+
+```html
+  <div id="div1">
+```
+
+```javascript
+  <script>
+    var div1 = document.querySelector("#div1");
+    div1.
+  </script>
+```
+
 ## License
 
-Effects.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+Effects.css is based on <a href="https://github.com/daneden/animate.css">Animate.css v3.7.2</a> by Daniel Eden and 96 contributors
+and on <a href="https://github.com/miniMAC/magic"> magic v1.4.5</a> by miniMAC and 9 contributors
+
+<ul>
+<li>Effects.css is licensed under the MIT license.</li>
+<li>Animate.css v3.7.2 is licensed under the MIT license.</li>
+<li>magic is licensed under the MIT license.</li>
+</ul>
 
 ## Contributing
 

@@ -22,8 +22,8 @@ var activatedAnimations = activateAnimations();
 var opts = {
   destPath: "./dist/",
   destPathWebkit:"./dist-webkit/",
-  demoPath:"./docs/demo/modules/animate/dist",
-  concatName: "animate.css",
+  demoPath:"./docs/demo/modules/effects.css/dist",
+  concatName: "effects.css",
   minRename: {
     suffix: ".min"
   },
@@ -100,7 +100,7 @@ gulp.task("demo",function(){
 
 // Read the config file and return an array of the animations to be activated
 function activateAnimations() {
-  var categories = JSON.parse(fs.readFileSync("animate-config.json")),
+  var categories = JSON.parse(fs.readFileSync("effects-config.json")),
     category,
     files,
     file,
@@ -121,7 +121,7 @@ function activateAnimations() {
     }
   }
   // prepend base CSS
-  target.push("sources/animate-core.css");
+  target.push("sources/effects-core.css");
 
   if (!count) {
     gutil.log("No animations activated.");

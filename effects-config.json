@@ -137,71 +137,93 @@
     "slideOutUp": true
   },
 
-  "magic":{
-    "boingInUp":true,
-    "boingOutDown":true,
-    "bombLeftOut":true,
-    "bombRightOut":true,
-    "foolishIn":true,
-    "foolishOut":true,
-    "holeOut":true,
-    "magic":true,
-    "openDownLeft":true,
-    "openDownLeftOut":true,
-    "openDownLeftReturn":true,
-    "openDownRight":true,
-    "openDownRightOut":true,
-    "openDownRightReturn":true,
-    "openUpLeft":true,
-    "openUpLeftOut":true,
-    "openUpLeftReturn":true,
-    "openUpRight":true,
-    "openUpRightOut":true,
-    "openUpRightReturn":true,
-    "perspectiveDown":true,
-    "perspectiveDownReturn":true,
-    "perspectiveLeft":true,
-    "perspectiveLeftReturn":true,
-    "perspectiveRight":true,
-    "perspectiveRightReturn":true,
-    "perspectiveUp":true,
-    "perspectiveUpReturn":true,
-    "puffIn":true,
-    "puffOut":true,
-    "rotateDown":true,
-    "rotateLeft":true,
-    "rotateRight":true,
-    "rotateUp":true,
-    "slideDown":true,
-    "slideDownReturn":true,
-    "slideLeft":true,
-    "slideLeftReturn":true,
-    "slideRight":true,
-    "slideRightReturn":true,
-    "slideUp":true,
-    "slideUpReturn":true,
-    "spaceInDown":true,
-    "spaceInLeft":true,
-    "spaceInRight":true,
-    "spaceInUp":true,
-    "spaceOutDown":true,
-    "spaceOutLeft":true,
-    "spaceOutRight":true,
-    "spaceOutUp":true,
-    "swap":true,
-    "swashIn":true,
-    "tinDownIn":true,
-    "tinDownOut":true,
-    "tinLeftIn":true,
-    "tinLeftOut":true,
-    "tinRightIn":true,
-    "tinRightOut":true,
-    "tinUpIn":true,
-    "tinUpOut":true,
-    "twisterInDown":true,
-    "twisterInUp":true,
-    "vanishIn":true,
-    "vanishOut":true,
-    "washOut":true
-  }
+"bling":{
+  "puffIn":true,
+  "puffOut":true,
+  "vanishIn":true,
+  "vanishOut":true
+},
+
+"boing":{
+  "boingInUp":true,
+  "boingOutDown":true
+},
+"bomb":{
+  "bombLeftOut":true,
+  "bombRightOut":true
+},
+"magic_effects":{
+  "swap":true,
+  "magic":true,
+  "twisterInDown":true,
+  "twisterInUp":true,
+  "washOut":true
+},
+
+"math":{
+  "foolishIn":true,
+  "foolishOut":true,
+  "swashIn":true,
+  "holeOut":true
+},
+"on_the_space":{
+  "spaceInDown":true,
+  "spaceInLeft":true,
+  "spaceInRight":true,
+  "spaceInUp":true,
+  "spaceOutDown":true,
+  "spaceOutLeft":true,
+  "spaceOutRight":true,
+  "spaceOutUp":true
+},
+"rotate":{
+  "rotateDown":true,
+  "rotateLeft":true,
+  "rotateRight":true,
+  "rotateUp":true
+},
+"slide":{
+  "slideDown":true,
+  "slideDownReturn":true,
+  "slideLeft":true,
+  "slideLeftReturn":true,
+  "slideRight":true,
+  "slideRightReturn":true,
+  "slideUp":true,
+  "slideUpReturn":true
+},
+"perspective":{
+  "perspectiveDown":true,
+  "perspectiveDownReturn":true,
+  "perspectiveLeft":true,
+  "perspectiveLeftReturn":true,
+  "perspectiveRight":true,
+  "perspectiveRightReturn":true,
+  "perspectiveUp":true,
+  "perspectiveUpReturn":true
+},
+"static_effects":{
+  "openDownLeft":true,
+  "openDownLeftOut":true,
+  "openDownLeftReturn":true,
+  "openDownRight":true,
+  "openDownRightOut":true,
+  "openDownRightReturn":true,
+  "openUpLeft":true,
+  "openUpLeftOut":true,
+  "openUpLeftReturn":true,
+  "openUpRight":true,
+  "openUpRightOut":true,
+  "openUpRightReturn":true
+},
+"tin":{
+  "tinDownIn":true,
+  "tinDownOut":true,
+  "tinLeftIn":true,
+  "tinLeftOut":true,
+  "tinRightIn":true,
+  "tinRightOut":true,
+  "tinUpIn":true,
+  "tinUpOut":true
+}
 }

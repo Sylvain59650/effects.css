@@ -168,20 +168,21 @@ Example
 ```
 
 ```html
-  <div id="div1">
+  <div id="div1">DIV 1</div>
 ```
 
 ```javascript
   <script>
     var div1 = document.querySelector("#div1");
-    div1.
+    div1.classList.add("animated");
+    div.classList.add("zoomIn");
   </script>
 ```
 
 ## License
 
 Effects.css is based on <a href="https://github.com/daneden/animate.css">Animate.css v3.7.2</a> by Daniel Eden and 96 contributors
-and on <a href="https://github.com/miniMAC/magic"> magic v1.4.5</a> by miniMAC and 9 contributors
+and on <a href="https://github.com/miniMAC/magic"> magic v1.4.5</a> by miniMAC and 9 contributors.
 
 <ul>
 <li>Effects.css is licensed under the MIT license.</li>

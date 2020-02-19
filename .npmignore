@@ -1,7 +1,7 @@
 node_modules/
 docs/
 tests/
-src/
+sources/
 .vscode
 gulpfile.js
 .prettierignore

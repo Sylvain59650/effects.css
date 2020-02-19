@@ -1,6 +1,6 @@
 {
   "name": "effects.css",
-  "version": "3.7.0",
+  "version": "3.7.1",
   "main": "dist/effects.min.css",
   "description":"A cross-browser library of CSS animations. As easy to use as an easy thing.",
   "directories": {
